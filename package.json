@@ -1,0 +1,11 @@
+{
+  "name": "state-events-and-forms",
+  "version": "1.0.0",
+  "description": "This is my reactJs  State Events and Forms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aamir",
+  "license": "ISC"
+}
