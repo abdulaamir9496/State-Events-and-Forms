@@ -2,12 +2,14 @@
 // import CounterState from './components/CounterState'
 // import HandleMultipleStateEvents from './components/HandleMultipleStateEvents'
 // import HandleInputElement from './components/HandleInputElement'
+import HandleMultipleInputElement from './components/HandleMultipleInputElement'
+
 // import { useContext } from 'react'
 // import ThemeContext from './components/ThemeContext'
 // import UserContext from './components/UserContext';
 
-import { useContext } from "react"
-import UserContext from "./components/UserContext"
+// import { useContext } from "react"
+// import UserContext from "./components/UserContext"
 
 function App() {
 
@@ -23,6 +25,7 @@ function App() {
       {/* <CounterState /> */}
       {/* <HandleMultipleStateEvents /> */}
       {/* <HandleInputElement /> */}
+      <HandleMultipleInputElement />
 
       {/* Task 1: Theme Context */}
       {/* <div style={{background: theme === 'light'? '#fff' : '#333', color: theme === 'light' ? '#000' : '#fff', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -41,29 +44,31 @@ function App() {
       </div> */}
 
       {/* Task 3: Nested Components */}
-      <div>
+      {/* <div>
         <h1>App component
           <Parent />
         </h1>
-      </div>
+      </div> */}
     </>
   )
 }
 
-function Parent() {
-  return(
-    <div>
-      <h2>Parent Component</h2>
-      <Child />
-    </div>
-  )
-}
+//parent function: 
+// function Parent() {
+//   return(
+//     <div>
+//       <h2>Parent Component</h2>
+//       <Child />
+//     </div>
+//   )
+// }
 
-function Child() {
+//child function: 
+// function Child() {
 
-  const {user} = useContext(UserContext);
+//   const {user} = useContext(UserContext);
 
-  return <h3>Child Component: {user ? `Hello, ${user.name}` : "No user logged in"}</h3>
-}
+//   return <h3>Child Component: {user ? `Hello, ${user.name}` : "No user logged in"}</h3>
+// }
 
 export default App
