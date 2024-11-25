@@ -2,7 +2,7 @@
 // import CounterState from './components/CounterState'
 // import HandleMultipleStateEvents from './components/HandleMultipleStateEvents'
 // import HandleInputElement from './components/HandleInputElement'
-import HandleMultipleInputElement from './components/HandleMultipleInputElement'
+// import HandleMultipleInputElement from './components/HandleMultipleInputElement'
 
 // import { useContext } from 'react'
 // import ThemeContext from './components/ThemeContext'
@@ -10,6 +10,8 @@ import HandleMultipleInputElement from './components/HandleMultipleInputElement'
 
 // import { useContext } from "react"
 // import UserContext from "./components/UserContext"
+
+import UseEffectHook from "./components/UseEffectHook"
 
 function App() {
 
@@ -25,7 +27,7 @@ function App() {
       {/* <CounterState /> */}
       {/* <HandleMultipleStateEvents /> */}
       {/* <HandleInputElement /> */}
-      <HandleMultipleInputElement />
+      {/* <HandleMultipleInputElement /> */}
 
       {/* Task 1: Theme Context */}
       {/* <div style={{background: theme === 'light'? '#fff' : '#333', color: theme === 'light' ? '#000' : '#fff', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -49,6 +51,8 @@ function App() {
           <Parent />
         </h1>
       </div> */}
+
+      <UseEffectHook />
     </>
   )
 }
@@ -72,3 +76,5 @@ function App() {
 // }
 
 export default App
+
+
