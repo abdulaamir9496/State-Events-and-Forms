@@ -56,11 +56,11 @@ const UseEffectHook = () => {
         document.title = `Button Clicked for ${count} times`;
     }, [count])
 
-    useEffect(() => {
-        console.log("Use Effect Hook runs only for text useState Hook");
-        // document.title = `Text written in ${text} field` or 
-        document.title = `Text written in ${count} field`
-    }, [text])
+    // useEffect(() => {
+    //     console.log("Use Effect Hook runs only for text useState Hook");
+    //     // document.title = `Text written in ${text} field` or 
+    //     document.title = `Text written in ${count} field`
+    // }, [text])
 
 
     //What is the use of the useEffect Hook ?
